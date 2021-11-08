@@ -7,27 +7,41 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_procura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="94dp"
         android:text="procurar um emprego"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_oferece" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button_sair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="8dp"
         android:text="Sair"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="626dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_procura" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_oferece"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="97dp"
         android:text="Oferecer um emprego"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_procura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
